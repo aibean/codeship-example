@@ -11,20 +11,6 @@ class DummyClassTest extends PHPUnit_Framework_TestCase
         $this->assertTrue($objDummyClass instanceof DummyClass);
     }
     
-    public function testCreateClassFail()
-    {
-        try
-        {
-            $objDummyClass = new DummyClass('wrong param');
-        }
-        catch(InvalidArgumentException $objEx)
-        {
-            return;
-        }
-        
-        $this->fail('Should not get to this.');
-    }
-    
     public function testGetArray()
     {
         $arrDummyData = array(1, 2, 3);

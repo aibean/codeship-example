@@ -1,6 +1,6 @@
 <?php
 
-include '../classes/DummyClass.php';
+include 'classes/DummyClass.php';
 
 class DummyClassTest extends PHPUnit_Framework_TestCase
 {
